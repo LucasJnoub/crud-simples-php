@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 18-Maio-2022 às 21:54
+-- Tempo de geração: 19-Maio-2022 às 01:48
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -30,9 +30,9 @@ SET time_zone = "+00:00";
 CREATE TABLE `clientes` (
   `id` int(10) NOT NULL,
   `nome` varchar(80) NOT NULL,
-  `email` varchar(80) NOT NULL,
-  `cidade` varchar(20) NOT NULL,
-  `estado` varchar(10) NOT NULL
+  `email` varchar(80) DEFAULT NULL,
+  `cidade` varchar(20) DEFAULT NULL,
+  `estado` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -53,7 +53,7 @@ ALTER TABLE `clientes`
 -- AUTO_INCREMENT de tabela `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
